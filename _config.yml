@@ -1,0 +1,59 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: "Virtual/Craft"
+author: Ali CB
+description: "I acknowledge the Gadigal and Wangal people of the Eora Nation, the Traditional Owners of the land I live and work on. I pay my respects to Elders past and present. Sovereignty has never been ceded, and this always was and always will be Aboriginal Land."
+description2: "This website is hosted on GitHub Pages. I believe GitHub has data centres located in Seattle and northern Virginia, but can't be sure. I would also like to acknowledge and pay my respects to the Traditional Owners of the lands where the servers that host this website are located."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: alicb3000
+instagram_username: resculpted
+email: "hello (at) alicb (dot) com (dot) au"
+# Build settings
+theme: minima
+
+
+header_pages:
+  - pages/about.markdown
+  - pages/Projects.md
+  - pages/Blog.md
+
+
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
