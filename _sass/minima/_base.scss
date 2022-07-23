@@ -13,6 +13,7 @@ dl, dd, ol, ul, figure {
 /**
  * Basic styling
  */
+
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
@@ -111,9 +112,8 @@ h2 {
  }
 
  h4, h5, h6 {
-  font-weight: $base-font-weight;
+  font-weight: $base-font-thick;
 }
-
 
 
 /**

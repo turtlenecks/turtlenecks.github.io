@@ -19,9 +19,9 @@
 # in the templates via {{ site.myvariable }}.
 
 title: "Virtual/Craft"
-author: Ali CB
+author: AliCB
 description: "I acknowledge the Gadigal and Wangal people of the Eora Nation, the Traditional Owners of the land I live and work on. I pay my respects to Elders past and present. Sovereignty has never been ceded, and this always was and always will be Aboriginal Land."
-description2: "This website is hosted on GitHub Pages. I believe GitHub has data centres located in Seattle and northern Virginia, but can't be sure. I would also like to acknowledge and pay my respects to the Traditional Owners of the lands where the servers that host this website are located."
+description2: "This website is built using Jekyll and hosted on GithubPages. I'm using the theme Minima with some minor customisation."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: alicb3000
@@ -32,7 +32,6 @@ theme: minima
 
 
 header_pages:
-  - pages/about.markdown
   - pages/Projects.md
   - pages/Blog.md
 
