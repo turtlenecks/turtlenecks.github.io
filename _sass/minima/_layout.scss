@@ -2,20 +2,22 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $maroon-color;
-  border-bottom: 50px solid $pale-blue-color;
-  background-color: $maroon-color;
-  min-height: $spacing-unit * 1.865;
+  border-top: 10px solid $dark-blue-2;
+  border-bottom: 5px solid $hot-green;
+  background-color: $dark-blue-2;
+  min-height: $spacing-unit * 2;
+  padding-left: 0;
 
   // Positioning context for the mobile navigation icon
   position: relative;
 }
 
 .site-title {
-  @include relative-font-size(1.625);
+  @include relative-font-size(3);
   font-family: $trickster-font;
   font-weight: 300;
-  color: $pale-blue-color;
+  color: $hot-green;
+  text-decoration: none;
 
 
   line-height: $base-line-height * $base-font-size * 2.25;
@@ -25,7 +27,7 @@
 
   &,
   &:visited {
-    color: $aqua-color-light;
+    color: $hot-green;
   }
 }
 
@@ -42,7 +44,7 @@
   }
 
   .page-link {
-    color: $pale-blue-color;
+    color: $hot-green;
     line-height: $base-line-height;
 
     // Gaps between nav items, but not on the last one
@@ -55,8 +57,8 @@
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;
-    background-color: $background-color;
-    border: 1px solid $aqua-color-light;
+    background-color: $hot-green;
+    border: 1px solid $hot-green;
     border-radius: 5px;
     text-align: right;
 
@@ -68,7 +70,7 @@
       height: 36px;
       z-index: 2;
       cursor: pointer;
-      color: $text-color;
+      color: lighten($midblue-2, 10%);
     }
 
     .menu-icon {
@@ -79,7 +81,7 @@
       line-height: 0;
       padding-top: 10px;
       text-align: center;
-      color: $text-color;
+      color: lighten($midblue-2, 10%);
 
       > svg {
         fill: $aqua-color-dark;
@@ -99,7 +101,7 @@
     .page-link {
       display: block;
       padding: 5px 10px;
-  color: $text-color;
+  color: $dark-blue-2;
       &:not(:last-child) {
         margin-right: 0;
       }
@@ -114,38 +116,45 @@
  * Site footer
  */
 .site-footer {
-  border-top: 0px solid $text-color-light;
+  border-top: 0px solid $hot-green;
   padding: $spacing-unit 0;
 }
 
 .footer-heading {
-  @include relative-font-size(1.125);
+  @include relative-font-size(0);
   margin-bottom: $spacing-unit / 2;
+  //background-color: $dark-blue-2;
+
+  color:$hot-green;
 }
 
 .contact-list,
 .social-media-list {
-  color: $maroon-color;
+  color: $hot-green;
   list-style: none;
   margin-left: 0;
 }
 
 .footer-col-wrapper {
   @include relative-font-size(0.8);
-  color: $aqua-color;
+background-color: $dark-blue-2;
   margin-left: -$spacing-unit / 2;
   @extend %clearfix;
+
 }
 
 .footer-col {
   float: left;
+  color: $hot-green;
   margin-bottom: $spacing-unit / 2;
   padding-left: $spacing-unit / 2;
+
 }
 
 .footer-col-1 {
   width: -webkit-calc(35% - (#{$spacing-unit} / 2));
   width:         calc(35% - (#{$spacing-unit} / 2));
+
 }
 
 .footer-col-2 {
@@ -185,22 +194,48 @@
  * Page content
  */
 .page-content {
+ vertical-align: center;
   padding: $spacing-unit 0;
  flex: 1 0 auto;
+
+
+   h2 {
+     @include relative-font-size(1.8);
+     @include media-query($on-laptop) {
+       @include relative-font-size(1.8);
+
+     }
+   }
+
+   h3 {
+     @include relative-font-size(1.5);
+     @include media-query($on-laptop) {
+       @include relative-font-size(1.5);
+     }
+   }
+
+   h4 {
+     @include relative-font-size(1.25);
+     @include media-query($on-laptop) {
+       @include relative-font-size(1.125);
+     }
+   }
+
 
 
 
 }
 
 .page-heading {
-  @include relative-font-size(2);
-  color: $maroon-color;
+  @include relative-font-size(2.5);
+  color: $dark-blue-2;
+  text-decoration: underline;
 
 }
 
 .post-list-heading {
   @include relative-font-size(1.75);
-  color: $maroon-color;
+  color: $dark-blue-2;
 }
 
 
@@ -215,13 +250,13 @@
 
 .post-meta {
   font-size: $small-font-size;
-  color: $aqua-color;
+  color: $dark-blue-2;
 }
 
 .post-link {
   display: block;
   @include relative-font-size(1.5);
-  color: $aqua-color;
+  color: $dark-blue-2;
 }
 
 
@@ -238,7 +273,7 @@
   @include relative-font-size(2.625);
   letter-spacing: -1px;
   line-height: 1;
-  color: $maroon-color;
+  color: $dark-blue-2;
 
 
 
@@ -249,17 +284,17 @@
 
 .post-content {
   margin-bottom: $spacing-unit;
-  h2 {
-    @include relative-font-size(2);
 
+  h2 {
+    @include relative-font-size(1.8);
     @include media-query($on-laptop) {
-      @include relative-font-size(1.75);
+      @include relative-font-size(2);
 
     }
   }
 
   h3 {
-    @include relative-font-size(1.4);
+    @include relative-font-size(1.2);
     @include media-query($on-laptop) {
       @include relative-font-size(1.375);
     }

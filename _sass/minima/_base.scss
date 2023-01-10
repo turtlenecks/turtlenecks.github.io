@@ -16,8 +16,12 @@ dl, dd, ol, ul, figure {
 
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  color: $text-color;
-  background-color: $background-color;
+  color: $dark-blue-2;
+  background-image:url("/assets/img/Untitled-3.png");
+  background-size:contain;
+//  background-color: $dark-blue-2;
+  border-left: 5px solid $hot-green;
+  border-right: 5px solid $hot-green;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -48,7 +52,22 @@ ul, ol, dl, figure,
  */
 main {
   display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+
+  margin-left: 20%;
+  margin-right: 20%;
+  border-left: 2px solid $hot-green;
+  border-right: 2px solid $hot-green;
+  border-bottom: 2px solid $hot-green;
+ background-color: lighten($midblue-2, 50%);
+
+
+ @include media-query($on-palm) {
+   margin-left: 5%;
+   margin-right: 5%;
+
+ }
 }
+
 
 
 
@@ -57,7 +76,8 @@ main {
  */
 img {
   max-width: 100%;
-  vertical-align: padding-left;
+  vertical-align: padding-bottom;
+  align: center;
 
 }
 
@@ -98,6 +118,7 @@ li {
  */
 h1 {
   font-weight: $base-font-thick;
+
 }
 
 h2 {
@@ -107,7 +128,9 @@ h2 {
 }
 
  h3 {
-   font-weight: $base-font-thick;
+     font-family: $base-bold-font;
+     font-weight: $base-font-ultrathick;
+
 
  }
 
@@ -120,16 +143,18 @@ h2 {
  * Links
  */
 a {
-  color: $maroon-color;
-  text-decoration: none;
+  color: $dark-blue-2;
+  text-decoration: underline;
+  text-decoration-color: $dark-blue-2;
 
   &:visited {
-    color: $aqua-color;
+    color: $dark-blue-2;
     text-decoration:underline;
+
   }
 
   &:hover {
-    color: $aqua-color;
+    color: $dark-blue-2;
     text-decoration: underline;
   }
 
@@ -138,6 +163,7 @@ a {
 
     .username {
       text-decoration: underline;
+      color:$hot-green;
     }
   }
 }
@@ -230,15 +256,28 @@ pre {
     width: 16px;
     height: 16px;
     display: inline-block;
-    fill: #{$aqua-color};
+    fill: #{$light-colour};
     padding-right: 5px;
     vertical-align: text-top;
 }
 
+.contact-list {
+  .email {
+    color:$hot-green;
+  }
+}
+
 .social-media-list {
+  .username{
+    color: $hot-green;
+  }
+
+
   li + li {
     padding-top: 5px;
+    color:$hot-green;
   }
+
 }
 
 

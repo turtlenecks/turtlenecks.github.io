@@ -12,20 +12,32 @@
   src: url("/fonts/Montserrat/Montserrat-Regular.ttf") format('truetype');
 }
 
+@font-face {
+  font-family: "RobotoMonoRegular";
+  src: url("/fonts/RobotoMono/RobotoMono-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "RobotoMonoBold";
+  src: url("/fonts/RobotoMono/RobotoMono-SemiBold.ttf") format('truetype');
+}
+
 // Define defaults for each variable.
 $trickster-font: "Trickster";
 
-$base-font-family: "Montserrat";
+$base-bold-font: "RobotoMonoBold";
 
+$base-font-family: "RobotoMonoRegular";
 $base-font-size:   14px !default;
 $base-font-weight: 400 !default;
-$base-font-thick: 800 !default;
+$base-font-thick: 500 !default;
+$base-font-ultrathick: 600 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
 $spacing-unit:     30px !default;
 
-
+//pallete 1
 $text-color:       #364353 !default;
 $text-color-light: lighten($text-color, 60%) !default;
 $text-color-dark:  darken($text-color, 25%) !default;
@@ -39,6 +51,15 @@ $aqua-color-dark:  darken($aqua-color, 25%) !default;
 $maroon-color: #7a3f59;
 $pale-blue-color: #d9e6ec;
 
+//pallete 2\
+$background-pale-color-2:#e2f3e4;
+$dark-blue-2: #332c50;
+$hot-green: #94e344;
+$midblue-2: #46878f;
+
+$light-colour: $hot-green;
+$mid-colour: $midblue-2;
+$dark-colour: $dark-blue-2;
 
 $table-text-align: left !default;
 
