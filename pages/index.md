@@ -14,3 +14,5 @@ design theory, interaction & emergent tech @ UTS
 
 ### Comics + Illustrations:
 every now and then
+
+<center> <h2> ** </h2> </center>
